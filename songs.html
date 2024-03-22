@@ -1,0 +1,771 @@
+<!doctype html>
+<html lang="en" class="h-100" data-bs-theme="auto">
+
+<head>
+  <script src="../assets/js/color-modes.js"></script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sticky-footer-navbar/">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-divider {
+      width: 100%;
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .btn-bd-primary {
+      --bd-violet-bg: #712cf9;
+      --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+      --bs-btn-font-weight: 600;
+      --bs-btn-color: var(--bs-white);
+      --bs-btn-bg: var(--bd-violet-bg);
+      --bs-btn-border-color: var(--bd-violet-bg);
+      --bs-btn-hover-color: var(--bs-white);
+      --bs-btn-hover-bg: #6528e0;
+      --bs-btn-hover-border-color: #6528e0;
+      --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+      --bs-btn-active-color: var(--bs-btn-hover-color);
+      --bs-btn-active-bg: #5a23c8;
+      --bs-btn-active-border-color: #5a23c8;
+    }
+
+    .bd-mode-toggle {
+      z-index: 1500;
+    }
+
+    .bd-mode-toggle .dropdown-menu .active .bi {
+      display: block !important;
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="sticky-footer-navbar.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column h-100">
+
+
+  <header>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Fixed navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Begin page content -->
+  <main class="flex-shrink-0">
+    <div class="container border">
+      <h1 class="mt-5">Lucille</h1>
+      <div class="alert alert-primary" role="alert">
+        <b>by Little Richard 1957</b><br />
+        Hints:
+      </div>
+      <h2>Intro</h2>
+      <div class="row">
+        <div class="col">
+          <img src="img/Lucille-1.png" class="rounded mx-auto d-block" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="img/Lucille-2.png" class="rounded mx-auto d-block" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="img/Lucille-3.png" class="rounded mx-auto d-block" />
+        </div>
+      </div>
+      <h2>Intro Chords</h2>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-primary">G</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">G</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">G</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">G</span>
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-primary">C</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">C</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">G</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">G</span>
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-primary">D</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">C</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">G</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">G</span>
+        </div>
+      </div>
+      <h2>Verse Chords</h2>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-primary">G</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">G</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">G</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">G</span>
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-secondary">1</span>Lucille, you won't do your sister's will?<br />
+          <span class="badge text-bg-secondary">2</span>Lucille, please, come back where you belong<br />
+          <span class="badge text-bg-secondary">chorus</span>I woke up this morning,...Lucille was not in sight,...I
+          asked my friends about her but all their lips were tigh<br />
+          <span class="badge text-bg-secondary">3</span>Lucille, baby, satisfy my heart<br />
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-primary">C</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">C</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">G</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">G</span>
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-secondary">1</span>Lucille, you won't do your sister's will?<br />
+          <span class="badge text-bg-secondary">2</span>Lucille, please, come back where you belong<br />
+          <span class="badge text-bg-secondary">chorus</span>Lucille, please, come back where you belon?<br />
+          <span class="badge text-bg-secondary">3</span>I played for it, baby, and gave you such a wonderful start<br />
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-primary">D</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">C</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">G</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">G</span>
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-secondary">1</span>She You ran off and married, but I love you still<br />
+          <span class="badge text-bg-secondary">2</span>I been good to you, baby, please, don't leave me alone<br />
+          <span class="badge text-bg-secondary">chorus</span>I been good to you, baby, please, don't leave me
+          alone<br />
+          <span class="badge text-bg-secondary">3</span>Lucille, you won't do your sister's will?<br />
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="container border">
+      <h1 class="mt-5">You never can tell</h1>
+      <div class="alert alert-primary" role="alert">
+        <b>by Chuck Berry 1964</b><br />
+        Hints:
+      </div>
+      <h2>Intro</h2>
+      <div class="row">
+        <div class="col">
+          <img src="img/Never-can-tell-1.png" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="img/Never-can-tell-2.png" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="img/Never-can-tell-3.png" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="img/Never-can-tell-4.png" />
+        </div>
+      </div>
+      <h2>Chords</h2>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-primary">C</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">C</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">C</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">C</span>
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-secondary">1</span>It was a teenage wedding, and the old folks wished them
+          well<br />
+          <span class="badge text-bg-secondary">2</span>They furnished off an apartment with a 2room Roebuck sale<br />
+          <span class="badge text-bg-secondary">3</span>They had a hifi phono, boy, did they let it blast<br />
+          <span class="badge text-bg-secondary">4</span>They bought a soupedup jitney, was a cherry red fifty
+          three<br />
+          <span class="badge text-bg-secondary">5</span>They had a teenage wedding, and the old folks wished them
+          well<br />
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-primary">C</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">C</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">G</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">G</span>
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-secondary">1</span>You could see that Pierre did truly love the mademoiselle<br />
+          <span class="badge text-bg-secondary">2</span>The coolerator was crammed with T V dinners and ginger
+          ale,<br />
+          <span class="badge text-bg-secondary">3</span>Seven hundredth little records, all rock, rhythm and jazz<br />
+          <span class="badge text-bg-secondary">4</span>And drove it down to Orleans to celebrate their
+          anniversary<br />
+          <span class="badge text-bg-secondary">4</span>You could see that Pierre did truly love the mademoiselle<br />
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-primary">G</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">G</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">G</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">G</span>
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-secondary">1</span>And now the young monsieur and madame have rung the chapel
+          bell<br />
+          <span class="badge text-bg-secondary">2</span>But when Pierre found work, the little money comin' worked out
+          well<br />
+          <span class="badge text-bg-secondary">3</span>But when the sun went down, the rapid tempo of the music
+          fell<br />
+          <span class="badge text-bg-secondary">4</span>It was there where Pierre was wedded to the lovely
+          mademoiselle<br />
+          <span class="badge text-bg-secondary">5</span>And now the young monsieur and madame have rung the chapel
+          belle<br />
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-primary">G</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">G</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">C</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">C</span>
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-secondary">1-5</span>"C'est la vie," say the old folks, "it goes to show you never
+          can tell"<br />
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="container border">
+      <h1 class="mt-5">Über sieben Brücken musst du gehen</h1>
+      <div class="alert alert-primary" role="alert">
+        <b>by Peter Maffay 1979</b><br />
+        Hints:
+      </div>
+      <!--h2>Intro</h2>
+      <div class="row">
+        <div class="col">
+          <img src="img/Never-can-tell-1.png" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="img/Never-can-tell-2.png" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="img/Never-can-tell-3.png" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="img/Never-can-tell-4.png" />
+        </div>
+      </div-->
+      <h2>Verse</h2>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-primary">G</span>
+          <span class="badge text-bg-primary">C</span>
+          <span class="badge text-bg-primary">G</span>
+          <span class="badge text-bg-primary">D</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">G</span>
+          <span class="badge text-bg-primary">C</span>
+          <span class="badge text-bg-primary">G</span>
+          <span class="badge text-bg-primary">D</span>
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-secondary">1</span>Manchmal geh' ich meine Strasse ohne Blick<br />
+          <span class="badge text-bg-secondary">2</span>Manchmal scheint die Uhr des Lebens stillzusteh'ne<br />
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-primary">G</span>
+          <span class="badge text-bg-primary">C</span>
+          <span class="badge text-bg-primary">G</span>
+          <span class="badge text-bg-primary">G</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">F</span>
+          <span class="badge text-bg-primary">F</span>
+          <span class="badge text-bg-primary">F</span>
+          <span class="badge text-bg-primary">F</span>
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-secondary">1</span>Manchmal wunsch' ich mir mein Schaukelpferd zuruck<br />
+          <span class="badge text-bg-secondary">2</span>Manchmal scheint man immer nur im Kreis zu geh'n<br />
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-primary">F</span>
+          <span class="badge text-bg-primary">F</span>
+          <span class="badge text-bg-primary">F</span>
+          <span class="badge text-bg-primary">F</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">Em</span>
+          <span class="badge text-bg-primary">Em</span>
+          <span class="badge text-bg-primary">Em</span>
+          <span class="badge text-bg-primary">Em</span>
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-secondary">1</span>Manchmal bin ich ohne Rast und Ruh<br />
+          <span class="badge text-bg-secondary">2</span>Manchmal ist man wie von Fernweh krank<br />
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-primary">Em</span>
+          <span class="badge text-bg-primary">F</span>
+          <span class="badge text-bg-primary">F</span>
+          <span class="badge text-bg-primary">F</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">Em</span>
+          <span class="badge text-bg-primary">D</span>
+          <span class="badge text-bg-primary">Am</span>
+          <span class="badge text-bg-primary">Bm / D / G</span>
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-secondary">1</span>Manchmal bin ich ohne Rast und Ruh<br />
+          <span class="badge text-bg-secondary">2</span>Manchmal ist man wie von Fernweh krank<br />
+        </div>
+      </div>
+      <h2>Chorus</h2>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-primary">D</span>
+          <span class="badge text-bg-primary">D</span>
+          <span class="badge text-bg-primary">G</span>
+          <span class="badge text-bg-primary">G</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">D</span>
+          <span class="badge text-bg-primary">G</span>
+          <span class="badge text-bg-primary">C</span>
+          <span class="badge text-bg-primary">C</span>
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-secondary">chorus</span>Uber sieben Brucken musst du geh'n<br />
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-primary">D</span>
+          <span class="badge text-bg-primary">D</span>
+          <span class="badge text-bg-primary">G</span>
+          <span class="badge text-bg-primary">G</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">D</span>
+          <span class="badge text-bg-primary">G</span>
+          <span class="badge text-bg-primary">C</span>
+          <span class="badge text-bg-primary">C</span>
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-secondary">chorus</span>Sieben dunkle Jahre ubersteh'n<br />
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-primary">D</span>
+          <span class="badge text-bg-primary">D</span>
+          <span class="badge text-bg-primary">Bm</span>
+          <span class="badge text-bg-primary">Bm</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">Bm</span>
+          <span class="badge text-bg-primary">Bm</span>
+          <span class="badge text-bg-primary">Bm</span>
+          <span class="badge text-bg-primary">Bm</span>
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-secondary">chorus</span>Siebenmal wirst du die Asche sein<br />
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-primary">Em</span>
+          <span class="badge text-bg-primary">C</span>
+          <span class="badge text-bg-primary">C</span>
+          <span class="badge text-bg-primary">D</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">D</span>
+          <span class="badge text-bg-primary">D</span>
+          <span class="badge text-bg-primary">D</span>
+          <span class="badge text-bg-primary">G / D</span>
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-secondary">chorus</span>Aber einmal auch der helle Schein<br />
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="container border">
+      <h1 class="mt-5">Bluetbadbullshitläärloufmagerquark</h1>
+      <div class="alert alert-primary" role="alert">
+        <b>by Patent Ochsner 1997</b><br />
+        Hints:
+      </div>
+      <h2>Intro</h2>
+      <div class="row">
+        <div class="col">
+          <img src="img/bluetbadbullshit-intro.png" />
+        </div>
+      </div>
+      <h2>Verse</h2>
+      <div class="row align-items-start">
+        <span class="badge text-bg-primary">2x</span>
+        <div class="col border">
+          <span class="badge text-bg-primary">Es</span>
+          <span class="badge text-bg-primary">G</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">As</span>
+          <span class="badge text-bg-primary">B</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">C</span>
+          <span class="badge text-bg-primary">G</span>
+        </div></span>
+        <div class="col border">
+          <span class="badge text-bg-primary">As</span>
+          <span class="badge text-bg-primary">A / H / D</span>
+        </div></span>
+      </div>
+      <h2>Chorus</h2>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-primary">Es</span>
+          <span class="badge text-bg-primary">G</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">As</span>
+          <span class="badge text-bg-primary">B</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">C</span>
+          <span class="badge text-bg-primary">G</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">As</span>
+          <span class="badge text-bg-primary">As</span>
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-primary">Es</span>
+          <span class="badge text-bg-primary">G</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">As</span>
+          <span class="badge text-bg-primary">B</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">C</span>
+          <span class="badge text-bg-primary">G</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">As</span>
+          <span class="badge text-bg-primary">As / B</span>
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-primary">Es</span>
+          <span class="badge text-bg-primary">B</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">As</span>
+          <span class="badge text-bg-primary">B</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">Es</span>
+          <span class="badge text-bg-primary">B</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">As</span>
+          <span class="badge text-bg-primary">B</span>
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-primary">Es</span>
+          <span class="badge text-bg-primary">B</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">As</span>
+          <span class="badge text-bg-primary">B</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">Es</span>
+          <span class="badge text-bg-primary">B</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">As</span>
+          <span class="badge text-bg-primary">As</span>
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-primary">As</span>
+          <span class="badge text-bg-secondary">Stop</span>
+        </div>
+      </div>
+      <h2>Bridge</h2>
+      <div class="row">
+        <div class="col">
+          <img src="img/bluetbadbullshit-bridge.png" />
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="container border">
+      <h1 class="mt-5">Ochsetuur</h1>
+      <div class="alert alert-primary" role="alert">
+        <b>by Patent Ochsner 1993</b><br />
+        Hints:
+      </div>
+      <h2>Intro</h2>
+      <div class="row">
+        <div class="col">
+          <img src="img/Ochsetuur-bassline.png" class="rounded mx-auto d-block" />
+        </div>
+      </div>
+      <h2>Chords</h2>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-primary">E</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">E</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">C</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">H</span>
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-primary">E</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">E</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">C</span>
+
+          <span class="badge text-bg-primary">H</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">E</span>
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-primary">H</span>
+        </div>
+      </div>
+    </div>
+    <hr />
+  </main>
+  <footer class="footer mt-auto py-3 bg-body-tertiary">
+    <div class="container">
+      <span class="text-body-secondary">Place sticky footer content here.</span>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
