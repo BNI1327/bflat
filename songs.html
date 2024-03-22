@@ -104,35 +104,29 @@
     <!-- Fixed navbar -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Fixed navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
+        <a class="navbar-brand" href="#">Bb-Flat</a>
+        <form class="d-flex" role="search">
+          <select class="form-control me-2" onchange="location = this.value;">
+            <option value="#bluetbad">bluetbadbullshitläärloufmagerquark</option>
+            <option value="#fest">Das Fest</option>
+            <option value="#hotelsong">Hotelsong</option>
+            <option value="#troum">i ha letscht nacht e troum gha</option>
+            <option value="#ochsetuur">ochsetuur</option>
+            <option value="#kestern">ke stärn</option>
+            <option value="#lucille">lucille</option>
+            <option value="#nevercantell">you never can tell</option>
+            <option value="#ohdarling">oh darling</option>
+            <option value="#siebenbrucken">sieben brücken</option>
+          </select>
+        </form>
+      </div>
       </div>
     </nav>
   </header>
 
   <!-- Begin page content -->
   <main class="flex-shrink-0">
-    <div class="container border">
+    <div id="lucille" class="container border">
       <h1 class="mt-5">Lucille</h1>
       <div class="alert alert-primary" role="alert">
         <b>by Little Richard 1957</b><br />
@@ -141,17 +135,17 @@
       <h2>Intro</h2>
       <div class="row">
         <div class="col">
-          <img src="img/Lucille-1.png" class="rounded mx-auto d-block" />
+          <img src="img/Lucille-1.png" class="rounded mx-auto d-block img-fluid" />
         </div>
       </div>
       <div class="row">
         <div class="col">
-          <img src="img/Lucille-2.png" class="rounded mx-auto d-block" />
+          <img src="img/Lucille-2.png" class="rounded mx-auto d-block img-fluid" />
         </div>
       </div>
       <div class="row">
         <div class="col">
-          <img src="img/Lucille-3.png" class="rounded mx-auto d-block" />
+          <img src="img/Lucille-3.png" class="rounded mx-auto d-block img-fluid" />
         </div>
       </div>
       <h2>Intro Chords</h2>
@@ -268,7 +262,7 @@
       </div>
     </div>
     <hr />
-    <div class="container border">
+    <div id="nevercantell" class="container border">
       <h1 class="mt-5">You never can tell</h1>
       <div class="alert alert-primary" role="alert">
         <b>by Chuck Berry 1964</b><br />
@@ -397,7 +391,7 @@
       </div>
     </div>
     <hr />
-    <div class="container border">
+    <div id="siebenbrucken" class="container border">
       <h1 class="mt-5">Über sieben Brücken musst du gehen</h1>
       <div class="alert alert-primary" role="alert">
         <b>by Peter Maffay 1979</b><br />
@@ -584,7 +578,7 @@
       </div>
     </div>
     <hr />
-    <div class="container border">
+    <div id="bluetbad" class="container border">
       <h1 class="mt-5">Bluetbadbullshitläärloufmagerquark</h1>
       <div class="alert alert-primary" role="alert">
         <b>by Patent Ochsner 1997</b><br />
@@ -703,8 +697,8 @@
       </div>
     </div>
     <hr />
-    <div class="container border">
-      <h1 class="mt-5">Ochsetuur</h1>
+    <div id="ochsetuur" class="container border">
+      <h1 class="mt-5" id="ochsetuur">Ochsetuur</h1>
       <div class="alert alert-primary" role="alert">
         <b>by Patent Ochsner 1993</b><br />
         Hints:
@@ -712,7 +706,7 @@
       <h2>Intro</h2>
       <div class="row">
         <div class="col">
-          <img src="img/Ochsetuur-bassline.png" class="rounded mx-auto d-block" />
+          <img src="img/Ochsetuur-bassline.png" class="rounded mx-auto d-block img-fluid" />
         </div>
       </div>
       <h2>Chords</h2>
@@ -749,6 +743,290 @@
       <div class="row align-items-start">
         <div class="col border">
           <span class="badge text-bg-primary">H</span>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div id="ohdarling" class="container border">
+      <h1 class="mt-5" id="ochsetuur">Oh Darling</h1>
+      <div class="alert alert-primary" role="alert">
+        <b>by The Beatles 1969</b><br />
+        Hints:
+      </div>
+      <h2>Intro</h2>
+      <div class="row">
+        <div class="col">
+          <img src="img/ohdarling.png" class="rounded mx-auto d-block img-fluid" />
+        </div>
+      </div>
+      <h2>Verse</h2>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-primary">D</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">A</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">H</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">G</span>
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-primary">E</span>
+          <span class="badge text-bg-primary">A</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">E</span>
+          <span class="badge text-bg-primary">A</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">D</span>
+          <span class="badge text-bg-primary">G</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">D</span>
+          <span class="badge text-bg-primary">A7</span>
+          <span class="badge text-bg-secondary">2.</span>
+          <span class="badge text-bg-primary">D7</span>
+        </div>
+      </div>
+      <h2>Bridge</h2>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-primary">G</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">Bb</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">D</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">D</span>
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-primary">E7</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">E7</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">A</span>          
+          <span class="badge text-bg-primary">Bb</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">A</span>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div id="troum" class="container border">
+      <h1 class="mt-5" id="ochsetuur">I ha letscht Nacht e Troum gha</h1>
+      <div class="alert alert-primary" role="alert">
+        <b>by Patent Ochsner 1995</b><br />
+        Hints:
+      </div>
+      <h2>Verse</h2>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-primary">Gm</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">D</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">Gm</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">Gm</span>
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-primary">Gm</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">D</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">Gm</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">Gm</span>
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-primary">Cm</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">F/A</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">Bb</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">Cm</span>
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-primary">Gm/Bb</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">D/A</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">Gm</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">Gm</span>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div id="fest" class="container border">
+      <h1 class="mt-5" id="ochsetuur">Das Fest</h1>
+      <div class="alert alert-primary" role="alert">
+        <b>by ???</b><br />
+        Hints:
+      </div>
+      <h2>Intro/Strophe</h2>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-primary">G/D</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">F#/D</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">E</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">A</span>
+          <span class="badge text-bg-primary">C</span>
+        </div>
+      </div>
+      <h2>Refrain</h2>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-primary">D</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">E</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">D</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">C</span>
+          <span class="badge text-bg-primary">G->H</span>
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-primary">D</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">E</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">C</span>
+          <span class="badge text-bg-primary">H</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">A-H-C-C#</span>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div id="kestern" class="container border">
+      <h1 class="mt-5" id="ochsetuur">Ke Stärn</h1>
+      <div class="alert alert-primary" role="alert">
+        <b>by Patent Ochser 2003 </b><br />
+        Hints:
+      </div>
+      <h2>Intro</h2>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-primary">F</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">Bm</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">F</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">C</span>
+        </div>
+      </div>
+      <h2>Strophe</h2>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-primary">F</span>
+          <span class="badge text-bg-primary">Dm</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">Am</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">F</span>
+          <span class="badge text-bg-primary">B</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">C</span>
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-primary">F</span>
+          <span class="badge text-bg-primary">Dm</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">B</span>
+          <span class="badge text-bg-primary">F</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">F</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">Gm</span>
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col border">
+          <span class="badge text-bg-primary">C</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">F</span>
+          <span class="badge text-bg-primary">B</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">F</span>
+        </div>
+        <div class="col border">
+          <span class="badge text-bg-primary">C</span>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div id="hotelsong" class="container border">
+      <h1 class="mt-5">Hotelsong</h1>
+      <div class="alert alert-primary" role="alert">
+        <b>by Patent Ochsner 1995</b><br />
+        Hints:
+      </div>
+      <h2>Intro</h2>
+      <div class="row">
+        <div class="col">
+          <img src="img/hotelsong.jpg" class="rounded mx-auto d-block img-fluid" />
         </div>
       </div>
     </div>
