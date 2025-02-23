@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #212529; 
+            color: #fff; 
+        }
+
+      .navbar {
+            background-color: #212529!important;
+        }
+
+      .navbar-brand,.nav-link {
+            color: #fff!important;
+        }
+
+      .container {
+            background-color: #343a40; 
+            border: none; 
+            padding: 30px; 
+            border-radius: 10px; 
+        }
+
+      .gallery-item {
+            margin-bottom: 20px;
+        }
+
+      .gallery-item img,.gallery-item video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px; 
+        }
+
+        h1 {
+            font-weight: 700; 
+        }
+    </style>
+</head>
+<body class="d-flex flex-column h-100">
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Bb-Flat</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="galleriesDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Galleries
+                            </a>
+                            <ul class="dropdown-menu" id="galleryDropdownMenu" aria-labelledby="galleriesDropdown">
+                                <li><a class="dropdown-item" href="#">250221-Eniline</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-shrink-0">
+        <div class="container mt-5" style="margin-top: 80px;"> 
+            <h1 id="galleryTitle">Gallery</h1>
+            <div id="galleryContent" class="row">
+                </div>
+        </div>
+    </main>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const galleryDir = urlParams.get('dir');
+
+        if (galleryDir) {
+            document.getElementById('galleryTitle').textContent = galleryDir;
+            loadGallery(galleryDir); 
+        } else {
+            document.getElementById('galleryContent').innerHTML = "<p>No gallery specified.</p>";
+        }
+
+        function loadGallery(directory) {
+            const galleryContent = document.getElementById('galleryContent');
+            galleryContent.innerHTML = ''; // Clear existing content
+
+            const files = [
+                { name: "./250221-Eniline/IMG_6662.MP4", type: "mp4" },
+                { name: "./250221-Eniline/IMG_6663.MP4", type: "mp4" },
+                { name: "./250221-Eniline/IMG_6664.MP4", type: "mp4" },
+                { name: "./250221-Eniline/IMG_6665 2.JPG", type: "jpg" },
+                { name: "./250221-Eniline/IMG_6670.MP4", type: "mp4" },
+                { name: "./250221-Eniline/IMG_6671.MP4", type: "mp4" },
+                { name: "./250221-Eniline/IMG_6673.MP4", type: "mp4" },
+                { name: "./250221-Eniline/IMG_6674.MP4", type: "mp4" },
+                { name: "./250221-Eniline/IMG_6676.MP4", type: "mp4" },
+                { name: "./250221-Eniline/IMG_6677.MP4", type: "mp4" },
+                { name: "./250221-Eniline/IMG_6678.MP4", type: "mp4" },
+                { name: "./250221-Eniline/IMG_6683.MP4", type: "mp4" },
+                { name: "./250221-Eniline/IMG_6689.MP4", type: "mp4" },
+                { name: "./250221-Eniline/IMG_6690.MP4", type: "mp4" },
+                { name: "./250221-Eniline/IMG_6691.MP4", type: "mp4" },
+                { name: "./250221-Eniline/IMG_6700.JPG", type: "jpg" },
+                { name: "./250221-Eniline/IMG_6701.JPG", type: "jpg" },
+                { name: "./250221-Eniline/IMG_6702.MP4", type: "mp4" },
+                { name: "./250221-Eniline/IMG_6703.MP4", type: "mp4" },
+                { name: "./250221-Eniline/IMG_6706.MP4", type: "mp4" },
+                { name: "./250221-Eniline/IMG_6710.MP4", type: "mp4" },
+                { name: "./250221-Eniline/IMG_6711.MP4", type: "mp4" },
+                { name: "./250221-Eniline/IMG_6712.MP4", type: "mp4" },
+                { name: "./250221-Eniline/IMG_6724.MP4", type: "mp4" },
+                { name: "./250221-Eniline/IMG_6725.MP4", type: "mp4" },
+                { name: "./250221-Eniline/IMG_6726.MP4", type: "mp4" },
+                { name: "./250221-Eniline/IMG_6727.MP4", type: "mp4" },
+                { name: "./250221-Eniline/IMG_6733.MP4", type: "mp4" },
+                { name: "./250221-Eniline/IMG_6736.MP4", type: "mp4" },
+                { name: "./250221-Eniline/IMG_6737.MP4", type: "mp4" },
+                { name: "./250221-Eniline/IMG_6738.MP4", type: "mp4" },
+                { name: "./250221-Eniline/IMG_6739.MP4", type: "mp4" },
+                { name: "./250221-Eniline/IMG_6740.MP4", type: "mp4" },
+                { name: "./250221-Eniline/IMG_6742.MP4", type: "mp4" },
+                { name: "./250221-Eniline/IMG_6743 2.JPG", type: "jpg" },
+                { name: "./250221-Eniline/IMG_6744.MP4", type: "mp4" },
+                { name: "./250221-Eniline/IMG_6745.MP4", type: "mp4" },
+                { name: "./250221-Eniline/IMG_6746.JPG", type: "jpg" }
+            ];
+
+            files.forEach(file => {
+                if (file.name.startsWith(`./${directory}/`)) {
+                    const filePath = file.name;
+                    const itemDiv = document.createElement('div');
+                    itemDiv.classList.add('col-md-4', 'gallery-item');
+
+                    if (file.type === 'jpg' || file.type === 'jpeg' || file.type === 'png') {
+                        const img = document.createElement('img');
+                        img.src = filePath;
+                        img.alt = file.name;
+                        itemDiv.appendChild(img);
+                    } else if (file.type === 'mp4') {
+                        const video = document.createElement('video');
+                        video.src = filePath;
+                        video.controls = true;
+                        video.muted = true;
+                        video.loop = true;
+                        video.autoplay = true;
+                        itemDiv.appendChild(video);
+                    }
+
+                    galleryContent.appendChild(itemDiv);
+                }
+            });
+        }
+
+        // Function to dynamically add gallery links (same as in index.html)
+        function addGalleryLinks() {
+            const galleryMenu = document.getElementById('galleryDropdownMenu');
+            const galleryFolders = ['250221-Eniline', /*... other gallery folders */ ]; 
+
+            galleryFolders.forEach(folder => {
+                const listItem = document.createElement('li');
+                const link = document.createElement('a');
+                link.classList.add('dropdown-item');
+                link.href = `gallery.html?dir=${folder}`;
+                link.textContent = folder;
+                listItem.appendChild(link);
+                galleryMenu.appendChild(listItem);
+            });
+        }
+
+        // Call the function when the page loads
+        document.addEventListener('DOMContentLoaded', addGalleryLinks);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+</html>
